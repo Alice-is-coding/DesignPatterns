@@ -1,0 +1,1 @@
+Creational patterns are patterns that deal with object creation.
