@@ -1,4 +1,4 @@
-package CreationalPatterns.Singleton;
+package CreationalPatterns.Singleton.singletonSynchronized;
 
 /**
  * Useful for multithreading.

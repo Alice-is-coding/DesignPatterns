@@ -1,4 +1,4 @@
-package CreationalPatterns.Singleton;
+package CreationalPatterns.Singleton.singleton;
 
 /**
  * Classic Singleton pattern.

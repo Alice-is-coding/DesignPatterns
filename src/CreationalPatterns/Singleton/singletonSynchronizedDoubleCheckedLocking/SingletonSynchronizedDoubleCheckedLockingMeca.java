@@ -1,4 +1,4 @@
-package CreationalPatterns.Singleton;
+package CreationalPatterns.Singleton.singletonSynchronizedDoubleCheckedLocking;
 
 /**
  * To start the lock mecanism only if the Singleton object isn't instantiated.
