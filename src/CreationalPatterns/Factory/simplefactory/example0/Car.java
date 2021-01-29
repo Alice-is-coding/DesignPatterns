@@ -5,7 +5,4 @@ package CreationalPatterns.Factory.simplefactory.example0;
  */
 public class Car extends Vehicle {
 
-    public Car() {
-
-    }
 }

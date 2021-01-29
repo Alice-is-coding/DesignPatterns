@@ -2,6 +2,9 @@ package CreationalPatterns.Factory.factorymethod.example0;
 
 import java.awt.*;
 
+/**
+ * AbstractProduct.
+ */
 public abstract class Vehicle {
     private Color color;
 

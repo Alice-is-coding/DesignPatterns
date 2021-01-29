@@ -7,9 +7,12 @@ import java.awt.*;
  * made abstract and the code to instantiate specific products is moved to subclasses that
  * implement an abstract method. This way, the factory class can be extended without being
  * modified.
+ *
+ * AbstractFactory.
  */
 public abstract class VehicleFactory {
     // Also usage of the Template Method.
+    // The concrete factories have to implement this method !
     protected abstract Vehicle createVehicle(String item);
 
     public Vehicle orderVehicle(String size, Color color) {

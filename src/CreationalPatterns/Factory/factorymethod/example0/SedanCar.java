@@ -1,5 +1,8 @@
 package CreationalPatterns.Factory.factorymethod.example0;
 
+/**
+ * ConcreteProduct.
+ */
 public class SedanCar extends Car {
 
     @Override

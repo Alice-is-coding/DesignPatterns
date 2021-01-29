@@ -1,5 +1,8 @@
 package CreationalPatterns.Factory.factorymethod.example0;
 
+/**
+ * ConcreteProduct.
+ */
 public class SmallTruck extends Truck {
 
     @Override
