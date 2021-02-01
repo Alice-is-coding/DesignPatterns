@@ -3,18 +3,31 @@ package CreationalPatterns.Factory.factorymethod.example0;
 import java.awt.*;
 
 /**
- * The factory method pattern is an improvement upon the static factory. The factory class is
- * made abstract and the code to instantiate specific products is moved to subclasses that
- * implement an abstract method. This way, the factory class can be extended without being
- * modified.
- *
  * AbstractFactory.
+ * 
+ * @author Alice B.
+ * @version 14/01/2021
  */
 public abstract class VehicleFactory {
     // Also usage of the Template Method.
     // The concrete factories have to implement this method !
+    /**
+     * To create the Vehicle.
+     *
+     * @param item The item which will make the difference between what to create...
+     *             Ex: The size of the Vehicle.
+     * @return A new Vehicle.
+     */
     protected abstract Vehicle createVehicle(String item);
 
+    /**
+     * To order a Vehicle.
+     * (Used by the Client).
+     *
+     * @param size The size of the Vehicle.
+     * @param color Its color.
+     * @return
+     */
     public Vehicle orderVehicle(String size, Color color) {
         Vehicle vehicle = createVehicle(size);
         vehicle.testVehicle();
