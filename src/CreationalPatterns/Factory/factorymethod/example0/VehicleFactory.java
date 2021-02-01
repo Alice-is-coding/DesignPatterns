@@ -4,8 +4,6 @@ import java.awt.*;
 
 /**
  * AbstractFactory.
- *
- * TODO: README.TXT
  * 
  * @author Alice B.
  * @version 14/01/2021
