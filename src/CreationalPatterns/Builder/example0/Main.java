@@ -1,5 +1,11 @@
 package CreationalPatterns.Builder.example0;
 
+/**
+ * The Main.
+ *
+ * @author Alice B.
+ * @version 14/01/2021
+ */
 public class Main {
     public static void main(String[] args) throws NoSuchThingInAGasolineCar, NoSuchThingInAnElectricCar {
         Director director = new Director();

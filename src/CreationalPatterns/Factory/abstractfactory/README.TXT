@@ -1,3 +1,5 @@
+# Design Patterns and Best Practices in Java - Packt Editions - 2018
+
 The abstract factory is an extended version of the factory method.
 Instead of creating a single type of object, it is used to create a family of related objects.
 If the factory method had one AbstractProduct, the abstract factory has several AbstractProduct classes.
