@@ -1,4 +1,4 @@
-package CreationalPatterns.ObjectPool;
+package CreationalPatterns.ObjectPool.example0;
 
 /**
  * Client.

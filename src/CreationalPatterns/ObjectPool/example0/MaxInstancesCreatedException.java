@@ -1,4 +1,4 @@
-package CreationalPatterns.ObjectPool;
+package CreationalPatterns.ObjectPool.example0;
 
 /**
  * Just to display to the Client that the max number of instances created has been reached.

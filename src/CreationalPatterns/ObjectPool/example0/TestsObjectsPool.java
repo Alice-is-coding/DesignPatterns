@@ -1,4 +1,4 @@
-package CreationalPatterns.ObjectPool;
+package CreationalPatterns.ObjectPool.example0;
 
 import java.util.Stack;
 import java.util.UUID;
