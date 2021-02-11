@@ -4,13 +4,14 @@ import java.awt.*;
 
 /**
  * AbstractFactory.
- * 
+ *
  * @author Alice B.
  * @version 14/01/2021
  */
 public abstract class VehicleFactory {
     // Also usage of the Template Method.
     // The concrete factories have to implement this method !
+
     /**
      * To create the Vehicle.
      *
@@ -24,14 +25,16 @@ public abstract class VehicleFactory {
      * To order a Vehicle.
      * (Used by the Client).
      *
-     * @param size The size of the Vehicle.
+     * @param size  The size of the Vehicle.
      * @param color Its color.
      * @return
      */
     public Vehicle orderVehicle(String size, Color color) {
         Vehicle vehicle = createVehicle(size);
-        vehicle.testVehicle();
-        vehicle.setColor(color);
+        if (vehicle != null) {
+            vehicle.testVehicle();
+            vehicle.setColor(color);
+        }
         return vehicle;
     }
 }
