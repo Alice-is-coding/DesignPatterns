@@ -30,13 +30,11 @@ public class SimpleFactoryWithRegistration {
         index++;
     }
 
-    // If performance is an issue, reflection may slow the program and so should be avoided.
-
     /**
      * To create a new instance of the Product requested if it's registered, thanks to reflection.
      * Note : If performance is an issue, reflection may slow the program and so should be avoided.
      *
-     * @param vehicle The Product to create.
+     * @param index The index of the Product to create. (The product needs to be previously registered in order to be able to create it).
      * @return A new instance of the Product passed in param, null if it hasn't been previously registered.
      *
      * @throws NoSuchMethodException A matching method hasn't been found...
@@ -44,9 +42,9 @@ public class SimpleFactoryWithRegistration {
      * @throws InvocationTargetException The underlying constructor threw an exception...
      * @throws InstantiationException The class that declares the underlying constructor is abstract...
      */
-    public Vehicle create(Vehicle vehicle) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        if(registeredProducts.containsValue(vehicle)) {
-            return vehicle.getClass().getConstructor().newInstance();
+    public Vehicle create(Integer index) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+        if(registeredProducts.containsKey(index)) {
+            return registeredProducts.get(index).getClass().getConstructor().newInstance();
         }
         return null;
     }
