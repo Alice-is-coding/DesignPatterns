@@ -9,7 +9,7 @@ package CreationalPatterns.Prototype.example0;
 public class CoconutCookie extends Cookie{
     /**
      * To clone the object.
-     * (Cf. (README.TXT) Notes about deep cloning and shallow cloning)).
+     * (Cf. (Readme.txt) Notes about deep cloning and shallow cloning)).
      *
      * (NB : The ConcretePrototypes should override this method when, especially when the Prototype abstract class/interface implements it).
      *

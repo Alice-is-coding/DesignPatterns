@@ -10,7 +10,7 @@ package CreationalPatterns.Prototype.example0;
 public abstract class Cookie implements Cloneable {
     /**
      * To clone the object.
-     * (Cf. (README.TXT) Notes about deep cloning and shallow cloning)).
+     * (Cf. (Readme.txt) Notes about deep cloning and shallow cloning)).
      *
      * @return The cookie clone.
      * @throws CloneNotSupportedException The object doesn't support cloning (does it implement the Cloneable interface ?...)

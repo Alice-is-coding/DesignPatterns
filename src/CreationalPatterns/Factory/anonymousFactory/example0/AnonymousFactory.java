@@ -13,7 +13,7 @@ import java.awt.*;
  * @author Alice B.
  * @version 14/01/2021
  *
- * TODO: README.TXT
+ * TODO: Readme.txt
  */
 public class AnonymousFactory {
     public static void main(String[] args) {
