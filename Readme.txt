@@ -26,6 +26,7 @@ To keep an organized project, each time you add a design pattern implementation 
 - In example[n], please don't forget to comment your classes with javadoc comments, neither to add a test class, so that everyone can understand the design pattern implementation you amazingly made ! ;)
 - Lastly, please add, if it doesn't already exist, a Readme.txt which gives an English definition of this pattern.
   If it already exists, feel free to complete the definition if you would like to.
+  (Note : If you coded more than 1 test class, please create a package "tests" inside your "example[n]" package so that your tests are grouped together and separated from your project).
 
     -> Example :
         - BehavioralPatterns
