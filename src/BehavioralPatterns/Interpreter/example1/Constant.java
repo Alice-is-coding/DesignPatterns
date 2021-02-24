@@ -19,7 +19,11 @@ public class Constant extends Expression<String> {
      * @param value The value of the constant.
      */
     public Constant(Float value) {
-        this.value = value;
+        if(value == null) {
+            this.value = 0.F;
+        } else {
+            this.value = value;
+        }
     }
 
     /**

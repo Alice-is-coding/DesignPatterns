@@ -32,7 +32,7 @@ public class Division extends BinaryExpression<String> {
      */
     @Override
     public String interpret(Context context) {
-        if(this.op2.interpret(context).equals("0.F")) {
+        if(this.op2.interpret(context).equals("0.0")) {
             throw new RuntimeException("Division by 0 not accepted !");
         }
         return "(" + this.op1.interpret(context) + " / " + this.op2.interpret(context) + ")";
