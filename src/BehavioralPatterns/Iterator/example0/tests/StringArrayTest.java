@@ -9,6 +9,12 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * StringArrayTest.
+ *
+ * @author Alice B.
+ * @version 11/03/2021
+ */
 class StringArrayTest {
     private String[] values;
     private StringArray stringArray;

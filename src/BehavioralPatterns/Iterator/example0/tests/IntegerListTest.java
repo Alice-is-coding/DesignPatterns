@@ -12,6 +12,12 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * IntegerListTest.
+ *
+ * @author Alice B.
+ * @version 11/03/2021
+ */
 class IntegerListTest {
     private List<Integer> list;
     private IntegerList integerList;
