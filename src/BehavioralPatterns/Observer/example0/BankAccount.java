@@ -1,7 +1,5 @@
 package BehavioralPatterns.Observer.example0;
 
-import java.util.Arrays;
-
 /**
  * BankAccount.
  * ConcreteSubject.
@@ -29,6 +27,9 @@ public class BankAccount extends Subject{
      */
     @Override
     public boolean attach(Observer observer) {
+        if(this.observers.contains(observer)) {
+            return false;
+        }
         return this.observers.add(observer);
     }
 
@@ -40,7 +41,11 @@ public class BankAccount extends Subject{
      */
     @Override
     public boolean attachAll(Observer... observers) {
-        return this.observers.addAll(Arrays.asList(observers));
+        boolean res = true;
+        for(Observer observer : observers) {
+            res &= attach(observer);
+        }
+        return res;
     }
 
     /**
@@ -51,6 +56,9 @@ public class BankAccount extends Subject{
      */
     @Override
     public boolean detach(Observer observer) {
+        if(!this.observers.contains(observer)) {
+            return false;
+        }
         return this.observers.remove(observer);
     }
 
@@ -62,7 +70,11 @@ public class BankAccount extends Subject{
      */
     @Override
     public boolean detachAll(Observer... observers) {
-        return this.observers.removeAll(Arrays.asList(observers));
+        boolean res = true;
+        for(Observer observer : observers) {
+            res &= detach(observer);
+        }
+        return res;
     }
 
     /** To notify the observers from the list (should be called when the state changed). */

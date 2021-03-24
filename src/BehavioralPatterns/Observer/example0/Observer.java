@@ -9,7 +9,7 @@ package BehavioralPatterns.Observer.example0;
  * @author Alice B.
  * @version 23/2021
  */
-public interface Observer {
+public interface Observer{
     /**
      * To update the observer accordingly to the changes occurred in the Subject.
      *

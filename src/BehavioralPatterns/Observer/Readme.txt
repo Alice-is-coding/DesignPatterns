@@ -14,6 +14,20 @@ The sole responsibility of a subject is to maintain a list of observers and to n
 The responsibility of observers is to register/unregister themselves on a subject (to get notified of state changes) and to
 update their state (> synchronize their state with the subject's state) when they are notified."
 
+-----------------------------------------------------------------------------------------------------------------------
+
+Note : The Observer pattern is used, for example, in event-driven programming : (Case of Swing. Even if swing isn't really used anymore, it allows
+       better understand how this pattern is used in event-driven programming)
+    - "observers" are "listeners" (> and will have a "Listener" suffix).
+    - All observers/listeners extend the "EventListener" class :
+        - xxxxListener extends java.util.EventListener
+        - update(Subject subject, Object args) becomes actionPerformed(ActionEvent ae)
+    - ConcreteSubject becomes for instance javax.swing.JButton
+        - attach(Observer obs) method becomes addxxxxListener(xxxxListener xl).
+
+    -> Each item is an observable subject (Subject) with its listeners/observers :
+        - Ex with "button" : Every time we click, the listeners/observers are notified -> So an instance of the Button class notifies its observers (ActionListener)...
+
 ------------------------------------------------------------------------------------------------------------------------
 # Design Patterns and Best Practices in Java - Packt - 2018
 

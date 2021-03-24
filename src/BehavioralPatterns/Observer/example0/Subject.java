@@ -60,4 +60,8 @@ public abstract class Subject {
 
     /** To notify the observers from the list (should be called when the state changed). */
     public abstract void notifyObservers();
+
+    protected List<Observer> getObservers() {
+        return this.observers;
+    }
 }
